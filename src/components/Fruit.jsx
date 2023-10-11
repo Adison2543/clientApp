@@ -4,7 +4,7 @@ import useWebSocket, { ReadyState } from 'react-use-websocket'
 const fruit = () => {
     const fruit = [ 'apple' , 'banana' , 'lemon', 'orange', 'straw']
     const [fruitIndex, setFruitIndex] = useState(0);
-    const socketUrl = 'ws://127.0.0.1:8001';
+    const socketUrl = 'ws://127.0.0.1:6521';
     const [message, setMessage] = useState('0');
 
     const { sendMessage, lastMessage, readyState } = useWebSocket(socketUrl);
